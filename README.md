@@ -1,4 +1,4 @@
-# Unimarket - Final Project
+# Unimarket - Final Individual Project
 An app for college and university students to buy/sell new and used items.
 
 ## Description
