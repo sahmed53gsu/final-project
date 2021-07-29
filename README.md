@@ -1,4 +1,4 @@
-# Unimarket
+# Unimarket - Final Project
 An app for college and university students to buy/sell new and used items.
 
 ## Description
@@ -33,7 +33,7 @@ Add a watch list feature, allows users to track and be notified about changes on
 
 ## IMPORTANT - Demo Videos 
 * Android app demo: 
-https://youtu.be/t7CIVwdAb7E
+https://youtu.be/rLfmJ-lKvTU
 
 
 
