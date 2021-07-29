@@ -38,6 +38,7 @@ class _PaymentState extends State<Payment> {
   Widget build(BuildContext context) {
     DocumentReference documentReference =
         FirebaseFirestore.instance.collection('sellitems').doc(value);
+    CollectionReference users = FirebaseFirestore.instance.collection('saveitems');
     DocumentReference documentReference1 =
         FirebaseFirestore.instance.collection('saveitems').doc(value);
     return Scaffold(
@@ -93,12 +94,9 @@ class _PaymentState extends State<Payment> {
                         .then((value) => print("Deleted Listing"))
                         .catchError((error) => print("Failed delete listing"));
 
-                    await FirebaseFirestore.instance
-                        .runTransaction((transaction) async {
-                          transaction.delete(documentReference1);
-                        })
-                        .then((value) => print("Deleted Listing from watchlist"))
-                        .catchError((error) => print("Failed delete listing from watchlist"));
+                    await users.doc(value).update({'Title': "ITEM HAS BEEN SOLD!!"})
+                        .then((value) => print("Sold watchlist"))
+                        .catchError((error) => print("Failed sell from watchlist"));
 
                     Navigator.push(
                         context, MaterialPageRoute(builder: (_) => Wrapper()));
