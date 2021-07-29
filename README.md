@@ -1,16 +1,13 @@
 # Unimarket
 An app for college and university students to buy/sell new and used items.
 
-Our Group:
-  - Khoa Cao - Backend Developer
-  - Saadh Ahmed - Backend Developer
-  - James Nguyen - UI Designer
-  - Anish Ganga - Program Manager
-  - Saad Mahmood - Scrum Master
-
 ## Description
 
 This is an ecommerce app built for university students to allow them to sell and purchase items in their local areas.
+
+## Final Project Requirements
+
+Add a watch list feature, allows users to track and be notified about changes on specific items
 
 ### Dependencies
 
